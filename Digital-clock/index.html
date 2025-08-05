@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Alarm Clock</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="background">
+  <div class="modern-alarm-app">
+    <h1>⏰ Digital Alarm Clock</h1>
+    <div id="clockDisplay">
+     <div class="clock-container">
+  <span id="hour">15</span>
+  <span>:</span>
+  <span id="minute">53</span>
+  <span>:</span>
+  <span id="second">21</span>
+  <span id="amPm">AM/PM</span>
+
+
+      
+    </div>
+
+    <div class="input-row">
+      <label for="alarmTime">Set Alarm:</label>
+      <input type="time" id="alarmTime">
+    </div>
+
+    <div class="button-row">
+      <button id="setAlarmBtn">Set Alarm</button>
+      <button id="stopAlarmBtn">Stop</button>
+      <button id="snoozeBtn">Snooze</button>
+    </div>
+
+    <audio id="alarmSound" src="./Asset/funny-alarm-317531.mp3" preload="auto"></audio>
+  </br>
+    <h6>Made with ❤️ by <a href="https://github.com/rp512">rp512</a></h4>
+  </div>
+
+ 
+</body>
+</html>
