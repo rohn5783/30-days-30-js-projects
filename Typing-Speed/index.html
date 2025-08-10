@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Typing Speed Test</title>
+  <link rel="stylesheet" href="style.css" />
+ <script src="script.js" defer></script>
+
+</head>
+<body>
+  <div class="container">
+    <h1>Typing Speed Test</h1>
+
+    <div class="paragraph-box" id="paragraphBox">
+      <!-- Paragraph will be inserted here by JavaScript -->
+      <p id="paragraph">Click "Start Test" to begin.</p>
+    </div>
+
+    <textarea 
+      id="inputArea" 
+      placeholder="Start typing here..." 
+      rows="6"
+      disabled
+    ></textarea>
+
+    <div class="info-box">
+      <div><strong>Time:</strong> <span id="timer">0s</span></div>
+      <div><strong>WPM:</strong> <span id="wpm">0</span></div>
+      <div><strong>Accuracy:</strong> <span id="accuracy">0%</span></div>
+    </div>
+ <button id="startBtn">Start Test</button>
+    <button id="ResetBtn">Reset Test</button>
+    <button id="submitBtn">Submit</button>
+
+  </div>
+
+</body>
+</html>
