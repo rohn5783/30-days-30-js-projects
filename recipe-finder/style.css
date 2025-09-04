@@ -1,0 +1,125 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f9f9f9, #f0f0f0);
+  color: #333;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  color: #ff5722;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Search Section */
+.search-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.search-box {
+  display: flex;
+  background: #fff;
+  border-radius: 50px;
+  padding: 8px 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  width: 100%;
+  max-width: 450px;
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border-radius: 50px;
+}
+
+.search-box button {
+  border: none;
+  background: #ff5722;
+  color: #fff;
+  border-radius: 50%;
+  padding: 12px 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 1.2rem;
+}
+
+.search-box button:hover {
+  background: #e64a19;
+}
+
+/* Results Grid */
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+/* Recipe Card */
+.recipe {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+
+.recipe img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.recipe-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.recipe-info h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.recipe-info a {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #ff5722;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.recipe-info a:hover {
+  background: #e64a19;
+}
